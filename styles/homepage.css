@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     padding: 0px;
@@ -110,4 +111,110 @@
 .menu-nav_active{
   transform: scaleX(1) translate(0%);
   opacity: 1;
+}
+
+.history{
+
+}
+.history_title{
+  width: 555px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 170px;
+}
+.history_top_title{
+  width: 100px;
+  height: 30px;
+  background-color: #7beec7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #60606e;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+.history_bottom_title{
+  width: 535px;
+  height: 80px;
+  border: 10px solid #60606e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #60606e;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 25px;
+}
+.history_subtitle_text{
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #60606e;
+  line-height: 24px;
+  margin-bottom: 125px;
+}
+.history_text{
+  display: flex;
+}
+.history_image{
+  margin-left: 80px;
+  position: relative;
+  width: 458px;
+  height: 400px;
+}
+.history_image_content{
+  position: absolute;
+  top: -40px;
+}
+.history_text_content{
+  width: 555px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #60606e;
+  margin-left: 130px;
+  line-height: 30px;
+}
+.history_text_content_title{
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  margin-bottom: 10px;
+}
+.history_text_content_title_background{
+  width: 67px;
+  height: 21px;
+  background-color: #7beec7;
+  position: absolute;
+  bottom: -5px;
+  z-index: -1;
+}
+.history_main_text{
+  position: relative;
+  padding-bottom: 50px;
+}
+.history_button{
+  width: 165px;
+  height: 50px;
+  background-color: #7beec7;
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
+}
+.history_button a{
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  width: 165px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
