@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.site-container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+.main_background{
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+.background_image{
+  max-width: 100%;
+  user-select: none;
+  object-fit: fill;
+  object-position: center;
+}
+.header{
+    width: 100%;
+    padding-top: 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #60606e;
+    padding-left: 80px;
+}
+
+.menu-btn{
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  border-radius: 50%;
+  position: relative;
+  padding-right: 80px;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after{
+  position: absolute;
+  top: 50%; margin-top: -1px;
+  left: 50%;  margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #60606e;
+
+}
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+  display: block;
+  transition: 0.2s;
+}
+.menu-btn span::before{
+  transform: translateY(-5px);
+}
+.menu-btn span::after{
+  transform: translateY(5px);
+}
+/* Alternative variat */
+/* .menu-btn_active span {
+  height: 0px;
+} */
+.menu-btn_active span:before{
+  transform: rotate(45deg);
+  transform-origin: left bottom;
+  width: 10px;
+}
+.menu-btn_active span:after{
+  transform: rotate(-45deg);
+  width: 10px;
+  transform-origin: left top;
+}
+.menu-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-nav__link{
+  display: inline-block;
+  text-decoration: none;
+  color: #60606e;
+  margin-right: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.menu-nav{
+  transition: 0.3s;
+  transform-origin: right center;
+  transform: scaleX(0) translateX(0%);
+  opacity: 0;
+  background-color: none;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  padding-right: 40px;
+  margin-right: -25px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.menu-nav_active{
+  transform: scaleX(1) translate(0%);
+  opacity: 1;
+}
